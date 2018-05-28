@@ -11,7 +11,7 @@
     <artifactId>Hygieia</artifactId>
     <version>2.0.5-SNAPSHOT</version>
   </parent>
-  
+
   <properties>
   	<frontend-maven-plugin.skip>false</frontend-maven-plugin.skip>
   </properties>
@@ -66,18 +66,18 @@
 
 				<executions>
 
-          <execution>
+          <!-- <execution>
             <id>install node and npm</id>
             <goals>
               <goal>install-node-and-npm</goal>
             </goals>
             <configuration>
-              <nodeVersion>v6.9.1</nodeVersion>
-              <npmVersion>5.0.1</npmVersion>
+              <nodeVersion>v8.11.2</nodeVersion>
+              <npmVersion>6.0.1</npmVersion>
                 <nodeDownloadRoot>http://nodejs.org/dist/</nodeDownloadRoot>
                 <npmDownloadRoot>http://registry.npmjs.org/npm/-/</npmDownloadRoot>
             </configuration>
-          </execution>
+          </execution> -->
 
           <execution>
             <id>npm install</id>

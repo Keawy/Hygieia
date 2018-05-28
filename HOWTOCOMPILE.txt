@@ -1,0 +1,19 @@
+-- mongodb
+mongod --dbpath C:\data\db
+mongo
+
+-- API
+C:\Users\rpetre\Documents\repo\Hygieia\api\target>
+java -jar api.jar --spring.config.location=C:\Users\rpetre\Documents\repo\Hygieia\api\target\classes\application.properties
+
+-- UI
+C:\Users\rpetre\Documents\repo\Hygieia\UI>
+gulp serve
+
+-- GitHub collector
+C:\Users\rpetre\Documents\repo\Hygieia\collectors\scm\github\target>
+java -jar github-scm-collector-2.0.5-SNAPSHOT.jar --spring.config.name=github --spring.config.location=..\github.properties
+
+-- Jenkins
+Jenkins>
+java -jar jenkins.war --httpPort=5454
